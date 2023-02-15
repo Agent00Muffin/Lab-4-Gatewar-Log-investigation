@@ -43,7 +43,6 @@ def generate_invalid_user_report(log_file):
     report_df.to_csv(f'invalid_users.csv', index=False, header=header_row)
     return
 
-# TODO: Step 12
 def generate_source_ip_log(log_file, ip_address):
 
     regex = r'(.+?) ' + f'SRC=({ip_address})' + r'(.+)'
